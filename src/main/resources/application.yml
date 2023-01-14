@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    consumer:
+      isolation-level: read_uncommitted
+      max-poll-records: 1000
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: latest
+    bootstrap-servers: localhost:9092
+
